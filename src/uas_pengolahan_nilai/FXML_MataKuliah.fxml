@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="uas_pengolahan_nilai.FXML_MataKuliahController">
+    <children>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Form MataKuliah" style="-fx-font-size: 18px;" />
+            <HBox spacing="10">
+                <Label text="Kode MataKuliah:" />
+                <TextField fx:id="txtKodeMK" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Nama MataKuliah:" />
+                <TextField fx:id="txtNamaMK" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="SKS:" />
+                <TextField fx:id="txtSKS" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Semester:" />
+                <TextField fx:id="txtSemester" />
+            </HBox>
+            <HBox spacing="10">
+                <Button text="Simpan" onAction="Btnsimpan" />
+                <Button text="Hapus" onAction="Btnhapus" />
+                <Button text="Update" onAction="Btnupdate" />
+            </HBox>
+            <TableView fx:id="tableMataKuliah">
+                <columns>
+                    <TableColumn text="Kode MataKuliah" fx:id="colKodeMK" />
+                    <TableColumn text="Nama MataKuliah" fx:id="colNamaMK" />
+                    <TableColumn text="SKS" fx:id="colSKS" />
+                    <TableColumn text="Semester" fx:id="colSemester" />
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>

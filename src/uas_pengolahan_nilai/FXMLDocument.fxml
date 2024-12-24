@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml" fx:controller="uas_pengolahan_nilai.FXMLDocumentController">
+    <tabs>
+        <Tab text="Mahasiswa">
+            <fx:include source="FXML_Mahasiswa.fxml" />
+        </Tab>
+        <Tab text="Jurusan">
+            <fx:include source="FXML_Jurusan.fxml" />
+        </Tab>
+        <Tab text="Dosen">
+            <fx:include source="FXML_Dosen.fxml" />
+        </Tab>
+        <Tab text="MataKuliah">
+            <fx:include source="FXML_MataKuliah.fxml" />
+        </Tab>
+        <Tab text="Ajar">
+            <fx:include source="FXML_Ajar.fxml" />
+        </Tab>
+    </tabs>
+</TabPane>

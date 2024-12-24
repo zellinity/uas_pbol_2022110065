@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="uas_pengolahan_nilai.FXML_DosenController">
+    <children>
+        <VBox spacing="10" alignment="CENTER">
+            <Label text="Form Dosen" style="-fx-font-size: 18px;" />
+            <HBox spacing="10">
+                <Label text="Kode Dosen:" />
+                <TextField fx:id="txtKdDosen" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Nama Dosen:" />
+                <TextField fx:id="txtNamaDosen" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Jurusan:" />
+                <ComboBox fx:id="cbJurusan" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="Alamat:" />
+                <TextField fx:id="txtAlamat" />
+            </HBox>
+            <HBox spacing="10">
+                <Label text="No. Telepon:" />
+                <TextField fx:id="txtNoTelp" />
+            </HBox>
+            <HBox spacing="10">
+                <Button text="Simpan" onAction="Btnsimpan" />
+                <Button text="Hapus" onAction="Btnhapus" />
+                <Button text="Update" onAction="Btnupdate" />
+            </HBox>
+            <TableView fx:id="tableDosen">
+                <columns>
+                    <TableColumn text="Kode Dosen" fx:id="colKdDosen" />
+                    <TableColumn text="Nama Dosen" fx:id="colNamaDosen" />
+                    <TableColumn text="Jurusan" fx:id="colJurusan" />
+                    <TableColumn text="Alamat" fx:id="colAlamat" />
+                    <TableColumn text="No. Telepon" fx:id="colNoTelp" />
+                </columns>
+            </TableView>
+        </VBox>
+    </children>
+</AnchorPane>
